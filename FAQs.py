@@ -20,7 +20,9 @@ faqs = [
     {"question": "What payment methods do you accept?",
      "answer": "We accept Visa, MasterCard, PayPal, and Apple Pay."},
     {"question": "How can I contact customer service?",
-     "answer": "You can reach us via the contact form or call 1-800-555-1234."}
+     "answer": "You can reach us via the contact form or call 1-800-555-1234."}，
+     {"question": "Hello",
+     "answer": "Hi,nice to meet you!How are you?"}
 ]
 
 # 文本预处理
@@ -57,3 +59,4 @@ user_input = st.text_input("You:")
 if user_input:
     answer = get_answer(user_input)
     st.text_area("Chatbot:", value=answer, height=100)
+
